@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"dc_kontrol\startup_stm32l053xx.o"
+"dc_kontrol\main.o"
+"dc_kontrol\stm32l0xx_it.o"
+"dc_kontrol\stm32l0xx_hal_msp.o"
+"dc_kontrol\stm32l0xx_hal_tim.o"
+"dc_kontrol\stm32l0xx_hal_tim_ex.o"
+"dc_kontrol\stm32l0xx_hal.o"
+"dc_kontrol\stm32l0xx_hal_i2c.o"
+"dc_kontrol\stm32l0xx_hal_i2c_ex.o"
+"dc_kontrol\stm32l0xx_hal_rcc.o"
+"dc_kontrol\stm32l0xx_hal_rcc_ex.o"
+"dc_kontrol\stm32l0xx_hal_flash_ramfunc.o"
+"dc_kontrol\stm32l0xx_hal_flash.o"
+"dc_kontrol\stm32l0xx_hal_flash_ex.o"
+"dc_kontrol\stm32l0xx_hal_gpio.o"
+"dc_kontrol\stm32l0xx_hal_dma.o"
+"dc_kontrol\stm32l0xx_hal_pwr.o"
+"dc_kontrol\stm32l0xx_hal_pwr_ex.o"
+"dc_kontrol\stm32l0xx_hal_cortex.o"
+"dc_kontrol\stm32l0xx_hal_exti.o"
+"dc_kontrol\stm32l0xx_hal_uart.o"
+"dc_kontrol\stm32l0xx_hal_uart_ex.o"
+"dc_kontrol\system_stm32l0xx.o"
+--strict --scatter "DC_kontrol\DC_kontrol.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DC_kontrol.map" -o DC_kontrol\DC_kontrol.axf
